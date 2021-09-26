@@ -21,10 +21,13 @@
         <p>
           {{ c.description }}
         </p>
-        
       </v-card-text>
 
-      <v-card-actions> </v-card-actions>
+      <v-card-actions
+        ><v-btn class="red darken-4" color="white" text @click="$emit('reserved', c)">
+          BUY CAR
+        </v-btn>
+      </v-card-actions>
     </v-card>
   </div>
 </template>
